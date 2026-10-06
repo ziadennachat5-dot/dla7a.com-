@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" id="meta-theme-color" content="#FFFFFF">
+  <title data-i18n="meta.title">DLA7A SERVICE | منصة خدمات التواصل الاجتماعي والحسابات الرقمية بالمغرب</title>
+  <meta name="description" data-i18n="meta.description" content="نوفر خدمات احترافية لإنستغرام، تيك توك، فيسبوك، حسابات رقمية رسمية Netflix و ChatGPT، أرقام واتساب وشحن ألعاب Free Fire و PES في المغرب.">
+  
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) {
+          t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.dataset.theme = t;
+      } catch (e) {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+
+  <!-- Floating Pill Header / Navbar -->
+  <header class="navbar-wrapper">
+    <div class="navbar-pill">
+      <a href="#hero" class="brand-wordmark">
+        <span class="brand-bold">DLA7A</span>
+        <span class="brand-light">SERVICE</span>
+      </a>
+
+      <!-- Desktop Nav Links (5 links only) -->
+      <nav class="nav-links-desktop">
+        <a href="#services" class="nav-link" data-i18n="nav.services">خدماتنا</a>
+        <a href="#pricing" class="nav-link" data-i18n="nav.pricing">الأسعار</a>
+        <a href="#accounts" class="nav-link" data-i18n="nav.accounts">الحسابات</a>
+        <a href="#testimonials" class="nav-link" data-i18n="nav.reviews">آراء العملاء</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">تواصل معنا</a>
+      </nav>
+
+      <!-- Desktop Actions Group -->
+      <div class="nav-actions-desktop">
+        <button type="button" data-theme-toggle id="theme-toggle-desktop" class="nav-action-btn theme-circle-btn" aria-label="Toggle theme">☀️</button>
+        <button id="lang-toggle-desktop" class="nav-action-btn lang-pill-btn" data-i18n="nav.langName">EN</button>
+        <a href="#order-form" class="nav-action-btn order-pill-btn" data-i18n="nav.orderNow">اطلب الآن</a>
+      </div>
+
+      <!-- Mobile Hamburger Button (< 900px) -->
+      <button id="menu-toggle-mobile" class="mobile-menu-btn" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="menu-drawer" class="menu-drawer">
+    <div class="drawer-header">
+      <a href="#hero" class="brand-wordmark">
+        <span class="brand-bold">DLA7A</span>
+        <span class="brand-light">SERVICE</span>
+      </a>
+      <button id="menu-close-mobile" class="btn-icon" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="drawer-controls">
+      <button type="button" data-theme-toggle id="theme-toggle-mobile" class="btn btn-secondary btn-sm" style="flex: 1; min-height: 44px;" aria-label="Toggle theme">☀️</button>
+      <button id="lang-toggle-mobile" class="btn btn-secondary btn-sm" style="flex: 1; min-height: 44px;" data-i18n="nav.langName">EN</button>
+    </div>
+
+    <nav class="drawer-nav-list">
+      <a href="#services" class="drawer-nav-link" data-i18n="nav.services">خدماتنا <span>←</span></a>
+      <a href="#pricing" class="drawer-nav-link" data-i18n="nav.pricing">الأسعار <span>←</span></a>
+      <a href="#accounts" class="drawer-nav-link" data-i18n="nav.accounts">الحسابات <span>←</span></a>
+      <a href="#testimonials" class="drawer-nav-link" data-i18n="nav.reviews">آراء العملاء <span>←</span></a>
+      <a href="#contact" class="drawer-nav-link" data-i18n="nav.contact">تواصل معنا <span>←</span></a>
+      <a href="#order-form" class="drawer-nav-link" data-i18n="nav.orderNow">اطلب الآن <span>←</span></a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <!-- Glow & Grid Overlay -->
+      <div class="hero-glow"></div>
+      <div class="hero-grid-overlay"></div>
+
+      <div class="container hero-container">
+        <!-- Text Column -->
+        <div class="hero-text-col">
+          <div class="hero-badge hero-fade-up">
+            <span class="pulse-dot"></span>
+            <span data-i18n="hero.badge">المنصة الأولى الموثوقة بالمغرب للخدمات الرقمية 🇲🇦</span>
+          </div>
+          
+          <h1 class="hero-headline hero-fade-up">
+            <!-- Rendered by JS -->
+          </h1>
+          
+          <p class="hero-subtitle hero-fade-up" data-i18n="hero.subtitle">
+            نوفر خدمات احترافية لإنستغرام، تيك توك، فيسبوك، حسابات وشحن ألعاب بجودة عالية وسرعة وأسعار تنافسية
+          </p>
+          
+          <div class="hero-actions hero-fade-up">
+            <a href="#order-form" class="btn-hero-order">
+              <span data-i18n="hero.ctaOrder">اطلب الآن</span>
+              <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a id="hero-wa-btn" href="#" target="_blank" rel="noopener" class="btn-hero-wa">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+              <span data-i18n="hero.ctaWa">محادثة عبر واتساب</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-row hero-fade-up">
+            <div class="trust-item">
+              <span class="trust-check">✓</span>
+              <span data-i18n="hero.trust1">دعم متواصل 24/7</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-check">✓</span>
+              <span data-i18n="hero.trust2">تسليم تلقائي وسريع</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-check">✓</span>
+              <span data-i18n="hero.trust3">+5,000 عميل سعيد</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Cards Column -->
+        <div class="hero-visual-col hero-fade-up">
+          <div id="hero-cards-container" class="hero-cards-stack">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo Marquee (Bottom of Hero) -->
+      <div class="hero-marquee-section hero-fade-up">
+        <div class="hero-marquee-track">
+          <span>Instagram &nbsp;·&nbsp; TikTok &nbsp;·&nbsp; Facebook &nbsp;·&nbsp; WhatsApp &nbsp;·&nbsp; Netflix &nbsp;·&nbsp; Prime Video &nbsp;·&nbsp; PlayStation &nbsp;·&nbsp; ChatGPT &nbsp;·&nbsp; CapCut &nbsp;·&nbsp; Canva &nbsp;·&nbsp; Free Fire &nbsp;·&nbsp; eFootball &nbsp;·&nbsp; Instagram &nbsp;·&nbsp; TikTok &nbsp;·&nbsp; Facebook &nbsp;·&nbsp; WhatsApp &nbsp;·&nbsp; Netflix &nbsp;·&nbsp; Prime Video &nbsp;·&nbsp; PlayStation &nbsp;·&nbsp; ChatGPT &nbsp;·&nbsp; CapCut &nbsp;·&nbsp; Canva &nbsp;·&nbsp; Free Fire &nbsp;·&nbsp; eFootball</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section id="services" class="section">
+      <div class="container flex-col">
+        <div class="badge" data-i18n="services.badge">خدمات النمو والتفاعل</div>
+        <h2 class="section-title" data-i18n="services.title">خدماتنا المتنوعة</h2>
+        <p class="body-text" data-i18n="services.subtitle">حلول متكاملة لتكبير حساباتك وزيادة التفاعل والمشاهدات على كبرى المنصات</p>
+
+        <div id="services-grid" class="grid grid-3">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Social Media Pricing Section -->
+    <section id="pricing" class="section">
+      <div class="container flex-col">
+        <div class="badge" data-i18n="pricing.badge">باقات وأسعار تفصيلية</div>
+        <h2 class="section-title" data-i18n="pricing.title">أسعار خدمات وسائل التواصل</h2>
+        <p class="body-text" data-i18n="pricing.subtitle">قوائم أسعار مباشرة لزيادة المتابعين والتفاعل بجودة فائقة وضمان عدم النقصان</p>
+
+        <!-- Pricing Scrollable Tabs -->
+        <div class="pricing-tabs">
+          <button class="tab-pill active" data-tab="ig" data-i18n="pricing.tabIg">إنستغرام</button>
+          <button class="tab-pill" data-tab="tt" data-i18n="pricing.tabTt">تيك توك</button>
+          <button class="tab-pill" data-tab="fb" data-i18n="pricing.tabFb">فيسبوك</button>
+        </div>
+
+        <!-- Pricing Rows Container -->
+        <div id="pricing-list-container" class="pricing-list">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Digital Accounts Section -->
+    <section id="accounts" class="section">
+      <div class="container flex-col">
+        <div class="badge" data-i18n="accounts.badge">اشتراكات أصلية مفعلة</div>
+        <h2 class="section-title" data-i18n="accounts.title">الحسابات الرقمية والاشتراكات</h2>
+        <p class="body-text" data-i18n="accounts.subtitle">اطلب حسابات رسمية وآمنة لأشهر المنصات العالمية بأسعار ممتازة</p>
+
+        <div id="accounts-grid" class="grid grid-3">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Numbers Section -->
+    <section id="whatsapp-sec" class="section">
+      <div class="container flex-col">
+        <div class="badge" data-i18n="whatsappSec.badge">أرقام خاصة ونظيفة 100%</div>
+        <h2 class="section-title" data-i18n="whatsappSec.title">خدمات أرقام واتساب</h2>
+        <p class="body-text" data-i18n="whatsappSec.subtitle">احصل على أرقام افتراضية للتفعيل والمراسلات بكل أمان</p>
+
+        <div id="whatsapp-grid" class="grid grid-2">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Game Top-Up Section -->
+    <section id="gaming" class="section">
+      <div class="container flex-col">
+        <div class="badge" data-i18n="gaming.badge">شحن بالـ ID الرسمي</div>
+        <h2 class="section-title" data-i18n="gaming.title">شحن الألعاب الإلكترونية</h2>
+        <p class="body-text" data-i18n="gaming.subtitle">شحن سريع وآمن لأشهر الألعاب بأسعار تنافسية في المغرب</p>
+
+        <div id="gaming-grid" class="grid grid-3">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="section">
+      <div class="container flex-col">
+        <div class="badge" data-i18n="whyUs.badge">ثقة واحترافية</div>
+        <h2 class="section-title" data-i18n="whyUs.title">لماذا تختار DLA7A SERVICE؟</h2>
+        <p class="body-text" data-i18n="whyUs.subtitle">نقدم أفضل الخدمات الرقمية بأعلى معايير الجودة والسرعة بالمغرب</p>
+
+        <div id="why-grid" class="grid grid-3">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="section">
+      <div class="container flex-col">
+        <h2 class="section-title" data-i18n="stats.title">DLA7A SERVICE في أرقام</h2>
+        <p class="body-text" data-i18n="stats.subtitle">إنجازات حقيقية تعكس ثقة آلاف العملاء بالمغرب والوطن العربي</p>
+
+        <div id="stats-grid" class="grid grid-4">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+      <div class="container flex-col">
+        <div class="badge" data-i18n="testimonials.badge">آراء عملائنا</div>
+        <h2 class="section-title" data-i18n="testimonials.title">ماذا يقول زبائننا؟</h2>
+        <p class="body-text" data-i18n="testimonials.subtitle">تجارب حقيقية وتقييمات زبائننا الكرام بعد استخدام خدماتنا بالمغرب</p>
+
+        <div id="testimonials-grid" class="grid grid-3">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Direct Order Form Section -->
+    <section id="order-form" class="section">
+      <div class="container flex-col">
+        <div class="card" style="padding: 24px;">
+          <div class="badge" data-i18n="orderForm.badge">طلب فوري ومباشر</div>
+          <h2 class="section-title" data-i18n="orderForm.title">اطلب خدمتك الآن</h2>
+          <p class="body-text" data-i18n="orderForm.subtitle">املأ البيانات وسيتم تحويلك مباشرة إلى محادثة واتساب لإتمام الطلب بسرعة وأمان</p>
+
+          <form id="whatsapp-order-form" class="flex-col" style="margin-block-start: 12px;">
+            <div class="form-group">
+              <label for="user-name" class="form-label" data-i18n="orderForm.nameLabel">الاسم الكامل</label>
+              <input type="text" id="user-name" class="form-input" placeholder="مثال: يوسف الإدريسي" required>
+            </div>
+
+            <div class="form-group">
+              <label for="user-phone" class="form-label" data-i18n="orderForm.phoneLabel">رقم الواتساب / الهاتف</label>
+              <input type="tel" id="user-phone" class="form-input" inputmode="tel" placeholder="06XXXXXXXX أو 07XXXXXXXX" required>
+            </div>
+
+            <div class="form-group">
+              <label for="user-service" class="form-label" data-i18n="orderForm.serviceLabel">الخدمة المطلوبة</label>
+              <select id="user-service" class="form-select" required>
+                <!-- Populated dynamically by app.js -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="user-notes" class="form-label" data-i18n="orderForm.notesLabel">ملاحظات إضافية (رابط الحساب / Player ID / الكمية)</label>
+              <textarea id="user-notes" class="form-textarea" placeholder="ضع رابط حسابك، أيدي فري فاير، أو تفاصيل الطلب هنا..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" data-i18n="orderForm.submitBtn">إرسال الطلب عبر واتساب 💬</button>
+            <p class="micro-text" style="text-align: center;" data-i18n="orderForm.safeNote">🔒 طلب آمن ومباشر مع المشرف الفني على واتساب</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Social Section -->
+    <section id="contact" class="section">
+      <div class="container flex-col">
+        <div class="badge" data-i18n="contact.badge">تواصل مباشر</div>
+        <h2 class="section-title" data-i18n="contact.title">تواصل مع فريق الدعم</h2>
+        <p class="body-text" data-i18n="contact.subtitle">متواجدون على مدار الساعة 24/7 للرد على جميع استفساراتك وتلبية طلباتك</p>
+
+        <div class="grid grid-2">
+          <!-- Instagram Card -->
+          <div class="card">
+            <!-- Official Instagram SVG Icon -->
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                <radialGradient id="ig-grad" cx="30%" cy="107%" r="138%">
+                  <stop offset="0%" stop-color="#fdf497"/>
+                  <stop offset="5%" stop-color="#fdf497"/>
+                  <stop offset="45%" stop-color="#fd5949"/>
+                  <stop offset="60%" stop-color="#d6249f"/>
+                  <stop offset="90%" stop-color="#285AEB"/>
+                </radialGradient>
+                <rect x="2" y="2" width="20" height="20" rx="5" fill="url(#ig-grad)"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <div>
+                <h3 class="card-title" data-i18n="contact.igTitle">إنستغرام Instagram</h3>
+                <span class="micro-text ltr-isolate" id="ig-handle-text">@dlaaa7a1</span>
+              </div>
+            </div>
+            <p class="body-text" data-i18n="contact.igDesc">تابع عروضنا اليومية الحصرية، إثباتات التسليم للزبائن، ومسابقات الشحن.</p>
+            <a id="ig-link-btn" href="#" target="_blank" rel="noopener" class="btn btn-secondary" data-i18n="contact.igBtn">متابعة على إنستغرام</a>
+          </div>
+
+          <!-- WhatsApp Card -->
+          <div class="card">
+            <!-- Official WhatsApp SVG Icon -->
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="#25D366">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+              <div>
+                <h3 class="card-title" data-i18n="contact.waTitle">واتساب WhatsApp</h3>
+                <span class="micro-text ltr-isolate" id="wa-display-text">+212 781-385545</span>
+              </div>
+            </div>
+            <p class="body-text" data-i18n="contact.waDesc">محادثة فورية مع المشرف الفني لاستقبال طلباتكم وطرق الدفع المغربية.</p>
+            <a id="wa-link-btn" href="#" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="contact.waBtn">تواصل الآن عبر واتساب</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container flex-col">
+      <div class="grid grid-2">
+        <div class="flex-col" style="gap: 12px;">
+          <a href="#hero" class="brand-wordmark">
+            <span class="brand-bold">DLA7A</span>
+            <span class="brand-light">SERVICE</span>
+          </a>
+          <p class="micro-text" data-i18n="footer.desc">نقدم أفضل خدمات التواصل الاجتماعي والحسابات الرقمية في المغرب والوطن العربي بأعلى معايير الأمان والسرعة.</p>
+          
+          <div>
+            <span class="form-label" data-i18n="footer.paymentsTitle">طرق الدفع المغربية المتاحة:</span>
+            <div id="payment-chips" class="payment-chips">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-col" style="gap: 12px;">
+          <span class="form-label" data-i18n="footer.linksTitle">روابط سريعة</span>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <a href="#hero" class="micro-text" data-i18n="nav.home">الرئيسية</a>
+            <a href="#services" class="micro-text" data-i18n="nav.services">خدماتنا</a>
+            <a href="#pricing" class="micro-text" data-i18n="nav.pricing">الأسعار</a>
+            <a href="#accounts" class="micro-text" data-i18n="nav.accounts">الحسابات</a>
+            <a href="#whatsapp-sec" class="micro-text" data-i18n="nav.whatsapp">واتساب</a>
+            <a href="#gaming" class="micro-text" data-i18n="nav.gaming">ألعاب</a>
+            <a href="#order-form" class="micro-text" data-i18n="nav.orderNow">اطلب الآن</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-block-start: 1px solid var(--border-color); padding-block-start: 20px; text-align: center;">
+        <p class="micro-text" data-i18n="footer.copyright">جميع الحقوق محفوظة © DLA7A SERVICE</p>
+        <p class="micro-text" style="opacity: 0.8; margin-block-start: 4px;" data-i18n="footer.tagline">صُمم بأعلى معايير السرعة والأمان بالمغرب 🇲🇦</p>
+        <span class="version-tag" style="font-size: 11px; opacity: 0.6; display: inline-block; margin-block-start: 6px; padding: 2px 6px; background: rgba(255,255,255,0.1); border-radius: 4px; font-weight: 700;">v3</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Button: WhatsApp 56px White Circle with Green Icon -->
+  <a id="floating-whatsapp" href="#" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contact on WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="#25D366">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+    </svg>
+  </a>
+
+  <script src="translations.js?v=4"></script>
+  <script src="app.js?v=4"></script>
+</body>
+</html>
